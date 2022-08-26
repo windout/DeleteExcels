@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  deleteexcels:
-    image: ${DOCKER_REGISTRY-}deleteexcels
-    build:
-      context: .
-      dockerfile: Dockerfile
