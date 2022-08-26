@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <label asp-for="@Model.FileUpload"></label>
+    <input asp-for="@Model.FileUpload" />
+    <span class ="alert-danger" >@Html.ValidationSummary()</span>
+    
+    <button class="btn btn-danger" asp-page="Index" onclick="dowload()">Action</button>
+</form>
+<script>
+
+</script>
